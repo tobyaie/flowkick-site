@@ -29,7 +29,7 @@
 <main>
   <nav><a href="../">FlowKick</a></nav>
   <h1>Privacy Policy</h1>
-  <p class="date">Last updated: 31 October 2026</p>
+  <p class="date">Last updated: 9 November 2026</p>
 
   <p>This policy explains what happens to your information when you use FlowKick, the freestyle football juggling app for iPhone. We have tried to write it so that everyone, kids included, can understand it.</p>
 
@@ -39,6 +39,7 @@
       <li>There are no accounts. You never sign up or log in.</li>
       <li>The camera video is looked at on your phone to count your touches. It is never uploaded.</li>
       <li>Your profile and progress stay on your phone.</li>
+      <li>World rankings (leaderboards) are only for players 13 and over, and only if you choose to join. If you join, your nickname, country, age group, avatar and scores are sent to our leaderboard server.</li>
       <li>There are no ads and no tracking.</li>
       <li>If you buy FlowKick Pro, Apple takes the payment, and a company called RevenueCat keeps a record of the purchase under a random ID, not your name.</li>
       <li>You can delete everything in <strong>Settings → Delete all my data</strong>.</li>
@@ -46,7 +47,7 @@
   </section>
 
   <h2 id="accounts">1. No accounts</h2>
-  <p>FlowKick has no accounts, sign-ups or logins. We don't ask for your email address, phone number or full name, and we don't run a server that stores a profile about you.</p>
+  <p>FlowKick has no accounts, sign-ups or logins. We don't ask for your email address, phone number or full name, and we don't run a server that stores a profile about you. The only exception is the World rankings (leaderboards): if you are 13 or over and choose to join, the leaderboard server keeps your player entry (section 5).</p>
 
   <h2 id="camera">2. The camera and your video</h2>
   <p>FlowKick uses the camera to watch the ball and your body so it can count your touches. This happens on your phone, while you play. The camera video is <strong>never uploaded</strong> to us or to anyone else.</p>
@@ -56,7 +57,7 @@
   <p>These are stored only on your phone, in FlowKick's own storage:</p>
   <ul>
     <li>your profile: the first name or nickname you type, your age band (for example 9-10 or 18+), your stronger foot, where you practise, your buddy and how your card looks;</li>
-    <li>your progress: sessions, touch counts, ratings, levels, tricks and your daily plan;</li>
+    <li>your progress: sessions, touch counts, ratings, stars, daily quests and your place on the Path;</li>
     <li>your settings, such as sounds and reminder times.</li>
   </ul>
   <p>We can't see any of this. If you back up your iPhone (with iCloud or to a computer), the backup may include FlowKick's stored information. Backups are handled by Apple and controlled by your own backup settings.</p>
@@ -72,16 +73,36 @@
     <li>We don't send RevenueCat any profile details, and we don't connect RevenueCat to any advertising or attribution service.</li>
     <li>Like any server on the internet, RevenueCat receives your phone's IP address and basic technical details (such as the app and iOS version) when the app contacts it. See <a href="https://www.revenuecat.com/privacy/">RevenueCat's privacy policy</a>.</li>
   </ul>
-  <p>Apart from what Apple handles (this section and section 6) and anything you choose to share yourself, this is the only information about you that leaves your phone in the current version of FlowKick.</p>
+  <p>Apart from what Apple handles (this section and section 7), the World rankings if you choose to join (section 5) and anything you choose to share yourself, this is the only information about you that leaves your phone in the current version of FlowKick.</p>
 
-  <h2 id="notifications">5. Reminders</h2>
+  <h2 id="leaderboards">5. World rankings (leaderboards)</h2>
+  <p>Joining is your choice. It's off until you join, and it's only for players 13 and over. Players under 13 can't see or join the leaderboards, and the app never contacts the leaderboard server for them.</p>
+  <h3 id="leaderboards-sent">What leaves your phone when you join</h3>
+  <ul>
+    <li>Your nickname.</li>
+    <li>Your country, the one you choose. We don't use your location.</li>
+    <li>Your age group: 13-17 or 18+, so you're ranked with players in your group. Never your birth year or exact age.</li>
+    <li>Your player avatar's settings: hair, skin, kit colour and shirt number, picked from the app's fixed lists. Never a photo or image.</li>
+    <li>Your weekly scores: your touches this week (and your best streak this week, if that board opens), with the date and the app and counting-engine versions.</li>
+    <li>An anonymous ID: a random code, not your name, that keeps your spot. It is made up of a Supabase user ID and an Apple App Attest key ID. App Attest also sends Apple's proof that the request comes from the real app.</li>
+    <li>Any report you file about another player's entry.</li>
+    <li>If you choose "Keep your spot on a new phone" (Sign in with Apple): a link to your Apple sign-in. We don't ask Apple for your name or email.</li>
+  </ul>
+  <p><strong>What other players see:</strong> your nickname, avatar, country flag, age group and scores, and the player card stats you posted with an earlier version, if any. They don't see your anonymous ID.</p>
+  <p><strong>What never leaves your phone for the leaderboards:</strong> your videos, camera frames, body-tracking data, your name, your birth year or exact age band (only the age group above), your photos and your location.</p>
+  <p><strong>Why:</strong> to show the rankings, keep your spot, and stop fake scores and offensive nicknames.</p>
+  <p><strong>Where:</strong> Supabase, on servers in Frankfurt, Germany, working for us as a processor. If you open World rankings without joining, the app only reads the public rankings and sends no ID. Like any internet service, Supabase sees your device's IP address while it connects and may keep it for a short time in its server logs. FlowKick doesn't store it or use it.</p>
+  <p><strong>How long:</strong> until you leave or delete. The boards are weekly: each week starts a new one.</p>
+  <p><strong>How to delete:</strong> Settings &gt; Leaderboards &gt; "Leave the leaderboards", or Settings &gt; "Delete all my data". Either one removes your player, your scores, the reports you filed and your anonymous ID from the server. If you use "Delete all my data" while offline, your phone's data goes at once and the app keeps trying the server until it confirms. Changing your age band to under 13 also leaves the leaderboards.</p>
+
+  <h2 id="notifications">6. Reminders</h2>
   <p>If you allow notifications, FlowKick can remind you to practise at a time you pick, and remind you 2 days before a free trial ends. These are <strong>local notifications</strong>: they are scheduled on your phone. There is no push server, and no notification data is sent anywhere. For players under 18, reminders never arrive late at night.</p>
 
-  <h2 id="no-tracking">6. No ads, no tracking, no analytics</h2>
+  <h2 id="no-tracking">7. No ads, no tracking, no analytics</h2>
   <p>FlowKick shows no ads. It contains no advertising, tracking, analytics or crash-reporting software, and it doesn't track you across other apps or websites. We don't sell or rent anyone's information.</p>
   <p>If you have turned on <em>Share with App Developers</em> in the iPhone Settings app (Privacy &amp; Security → Analytics &amp; Improvements), Apple may share crash and performance reports for FlowKick with us. Apple controls that setting, not FlowKick.</p>
 
-  <h2 id="report">7. "Help improve counting" (not active yet)</h2>
+  <h2 id="report">8. "Help improve counting" (not active yet)</h2>
   <p>We are building an optional report to help us improve how FlowKick counts. <strong>It is not active yet.</strong> Its switch is hidden in the app until the server that receives the reports is launched, and until then nothing is sent. We are describing it now so you know how it will work. We'll update this policy if anything below changes before it launches.</p>
   <ul>
     <li><strong>Who:</strong> only players who picked the age band 13-17 or 18+. It is never offered to players under 13.</li>
@@ -105,29 +126,30 @@
     <li><strong>Turning it off:</strong> switch it off in Settings at any time. That stops all future reports. Reports already sent carry no ID that links them to you or your phone, so we can't find a particular person's reports to delete them early.</li>
   </ul>
 
-  <h2 id="kids">8. Kids under 13</h2>
+  <h2 id="kids">9. Kids under 13</h2>
   <p>Kids can use FlowKick. When you set up the app, you pick an age band. The app doesn't check it and doesn't collect it anywhere else. If the band is under 13, FlowKick uses kid-safe settings:</p>
   <ul>
     <li>the "Help improve counting" report is not offered;</li>
+    <li>the World rankings (leaderboards) are never shown, can't be joined, and the app never contacts the leaderboard server;</li>
     <li>the card picture can only be saved to Photos, with no share buttons;</li>
     <li>the card shows a first name or nickname only, and the portrait is an illustration, never a photo;</li>
     <li>reminders are quiet between 8 pm and 7 am;</li>
     <li>the purchase screen asks kids to check with a grown-up before buying; with Family Sharing, Apple's Ask to Buy lets the grown-up approve.</li>
   </ul>
-  <p>For kids, nothing leaves the phone except what Apple and RevenueCat need to handle purchases and check subscription status (section 4). Parents can delete a child's FlowKick data at any time (section 9), or contact us with questions.</p>
+  <p>For kids, nothing leaves the phone except what Apple and RevenueCat need to handle purchases and check subscription status (section 4). Parents can delete a child's FlowKick data at any time (section 10), or contact us with questions.</p>
 
-  <h2 id="delete">9. Deleting your data</h2>
-  <p>Go to <strong>Settings → Delete all my data</strong>. This deletes your profile, card, progress, sessions and settings from the phone, and cancels FlowKick's reminders. Deleting the app also removes its data from the phone.</p>
+  <h2 id="delete">10. Deleting your data</h2>
+  <p>Go to <strong>Settings → Delete all my data</strong>. This deletes your profile, card, progress, sessions and settings from the phone, and cancels FlowKick's reminders. If you joined the World rankings, it also removes your player, your scores, the reports you filed and your anonymous ID from the leaderboard server (section 5); if you're offline, the app keeps trying until the server confirms. <strong>Settings → Leaderboards → Leave the leaderboards</strong> removes the same leaderboard data without deleting anything else. Deleting the app also removes its data from the phone, but not your leaderboard entry, so use one of these first.</p>
   <p>Delete all my data doesn't cancel a subscription; that's done through your Apple ID (in the iPhone Settings app, tap your name, then Subscriptions). It also doesn't remove the purchase records kept by Apple and RevenueCat, or any picture you already saved or shared.</p>
-  <p>Because we hold no profile about you, there is nothing on our side to look up, send you or delete, apart from the RevenueCat purchase records described above. If you have a question or request about your information, contact us.</p>
+  <p>Apart from your leaderboard entry if you joined (which the steps above delete) and the RevenueCat purchase records described above, we hold no profile about you, so there is nothing else on our side to look up, send you or delete. If you have a question or request about your information, contact us.</p>
 
-  <h2 id="rights">10. Your rights</h2>
-  <p>Depending on where you live (for example the EU, the UK or California), you may have the right to ask what personal information is held about you, to have it corrected or deleted, or to object to its use. Almost everything FlowKick knows stays on your phone, where you can see it in the app and delete it yourself (section 9). For anything else, including the purchase records described in section 4, email us and we'll help. You can also contact your local data-protection authority.</p>
+  <h2 id="rights">11. Your rights</h2>
+  <p>Depending on where you live (for example the EU, the UK or California), you may have the right to ask what personal information is held about you, to have it corrected or deleted, or to object to its use. Almost everything FlowKick knows stays on your phone, where you can see it in the app and delete it yourself (section 10). If you joined the World rankings, you can delete your leaderboard data in the app too (section 5). For anything else, including the purchase records described in section 4, email us and we'll help. You can also contact your local data-protection authority.</p>
 
-  <h2 id="changes">11. Changes to this policy</h2>
+  <h2 id="changes">12. Changes to this policy</h2>
   <p>If we change this policy, we'll post the new version on this page and change the "Last updated" date at the top.</p>
 
-  <h2 id="contact">12. Who we are and how to contact us</h2>
+  <h2 id="contact">13. Who we are and how to contact us</h2>
   <p>FlowKick is made by an independent developer. "We" and "us" in this policy mean the developer of FlowKick, shown as the seller on the App Store.</p>
   <p>Questions about privacy, or about a child's use of FlowKick: <strong><a href="mailto:flowkickapp@gmail.com">flowkickapp@gmail.com</a></strong></p>
 
